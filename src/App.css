@@ -1,0 +1,59 @@
+/* Ensure text is centered and has proper spacing on small screens */
+h1.text-center {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 576px) {
+  h1.text-center {
+    font-size: 2rem;
+  }
+}
+
+/* Enhance card styles */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.card-img-top {
+  height: auto;
+  width: 100%;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Adjust button spacing */
+.d-flex.justify-content-between {
+  padding: 0 15px;
+}
+
+@media (max-width: 576px) {
+  .d-flex.justify-content-between {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .d-flex.justify-content-between button {
+    margin: 5px 0;
+  }
+}
+/* src/App.css */
+.blog-post-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-post-card .card-body {
+  flex: 1;
+}
+
+.blog-post-card .btn {
+  margin-top: auto;
+}
+
